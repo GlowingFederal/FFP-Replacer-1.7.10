@@ -21,7 +21,6 @@ jobs:
       - name: Download Python script
         run: |
           curl -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
