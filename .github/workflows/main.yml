@@ -2,14 +2,11 @@ name: Process Java Code
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - 'input.java'
 
 jobs:
-  build:
+  process:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,11 +20,13 @@ jobs:
 
       - name: Download Python script
         run: |
-          curl -o update_java_code_with_counts.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
+          curl -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          # Create a requirements.txt file if necessary, or comment this line if no dependencies
+          echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
       - name: Run Python script
