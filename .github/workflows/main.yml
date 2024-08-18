@@ -39,7 +39,7 @@ jobs:
           python main.py
 
       - name: Upload result
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: updated-java-code
           path: updated_source.java
