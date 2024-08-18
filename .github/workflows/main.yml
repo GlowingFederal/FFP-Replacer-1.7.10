@@ -4,9 +4,6 @@ on:
   push:
     paths:
       - 'input.java'
-    types:
-      - created
-      - modified
 
 jobs:
   process:
