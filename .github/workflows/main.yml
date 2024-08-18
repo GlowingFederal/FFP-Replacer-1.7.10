@@ -32,17 +32,21 @@ jobs:
           echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
-      - name: Run Python script
+      - name: Run Python script if .java files exist
         run: |
           mkdir -p java_files
-          mv *.java java_files/
-          python main.py
-
-      - name: Move processed files back
-        run: |
-          mv java_files/*.java ./
+          shopt -s nullglob
+          java_files=(*.java)
+          if [ ${#java_files[@]} -gt 0 ]; then
+            mv *.java java_files/
+            python main.py
+            mv java_files/*.java ./
+          else
+            echo "No .java files found to process."
+          fi
 
       - name: Upload results
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: processed-java-files
