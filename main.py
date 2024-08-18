@@ -2,7 +2,7 @@ import re
 
 # File Inputs
 csv_file = 'FFPMappings.csv'
-java_file = 'Input.java'
+java_file = 'input.java'
 output_file = 'Output.java'
 
 # Make Dict
