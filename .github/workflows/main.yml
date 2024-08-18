@@ -45,15 +45,8 @@ jobs:
             echo "No .java files found to process."
           fi
 
-      - name: Upload results if .java files exist
-        if: ${{ always() }}  # Ensures this step runs regardless of the previous step
-        run: |
-          java_files=(*.java)
-          if [ ${#java_files[@]} -gt 0 ]; then
-            echo "Uploading processed .java files..."
-          else
-            echo "No .java files to upload."
-          fi
+      - name: Upload results
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: processed-java-files
