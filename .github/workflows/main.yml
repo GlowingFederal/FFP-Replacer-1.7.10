@@ -3,7 +3,7 @@ name: Process Java Code
 on:
   push:
     paths:
-      - 'input.java'
+      - '*.java'  # Trigger on any .java file
 
 jobs:
   process:
@@ -25,21 +25,25 @@ jobs:
       - name: Verify Python script
         run: |
           cat main.py
-          # Optionally, you can add further checks to ensure the file is downloaded correctly
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Create a requirements.txt file if necessary
           echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
       - name: Run Python script
         run: |
+          mkdir -p java_files
+          mv *.java java_files/
           python main.py
 
-      - name: Upload result
+      - name: Move processed files back
+        run: |
+          mv java_files/*.java ./
+
+      - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: updated-java-code
-          path: updated_source.java
+          name: processed-java-files
+          path: '*.java'
