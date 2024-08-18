@@ -1,9 +1,9 @@
 import re
 
 # File Inputs
-csv_file = 'MethodsPlusFieldsDecomplicated.csv'
-java_file = 'MCH_EntityTank.java'
-output_file = 'updated_source.java'
+csv_file = 'FFPMappings.csv'
+java_file = 'Input.java'
+output_file = 'Output.java'
 
 # Make Dict
 mapping = {}
