@@ -3,7 +3,7 @@ import re
 # File Inputs
 csv_file = 'FFPMappings.csv'
 java_file = 'input.java'
-output_file = 'Output.java'
+output_file = 'updated_source.java'
 
 # Make Dict
 mapping = {}
