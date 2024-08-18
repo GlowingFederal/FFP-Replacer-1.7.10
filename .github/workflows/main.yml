@@ -20,11 +20,17 @@ jobs:
 
       - name: Download Python script
         run: |
-          curl -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py?token=GHSAT0AAAAAACWE32CGSATYWHZ6XSEGUKDGZWCOIRA
+          curl -H "Authorization: token GHSAT0AAAAAACWE32CGSATYWHZ6XSEGUKDGZWCOIRA" -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
+
+      - name: Verify Python script
+        run: |
+          cat main.py
+          # Optionally, you can add further checks to ensure the file is downloaded correctly
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Create a requirements.txt file if necessary, or comment this line if no dependencies
+          # Create a requirements.txt file if necessary
           echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
