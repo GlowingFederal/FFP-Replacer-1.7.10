@@ -20,7 +20,7 @@ jobs:
 
       - name: Download Python script
         run: |
-          curl -H -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
+          curl -H "Authorization: token ${{ secrets.GH_PAT }}" -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
 
       - name: Verify Python script
         run: |
