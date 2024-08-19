@@ -3,7 +3,7 @@ name: Process Java Code
 on:
   push:
     paths:
-      - 'java_files/**/*.java'  # Trigger on any .java file within java_files directory
+      - '*.java'  # Trigger on any .java file
 
 jobs:
   process:
@@ -32,12 +32,15 @@ jobs:
           echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
-      - name: Run Python script on .java files
+      - name: Run Python script if .java files exist
         run: |
+          mkdir -p java_files
           shopt -s nullglob
-          java_files=(java_files/*.java)
+          java_files=(*.java)
           if [ ${#java_files[@]} -gt 0 ]; then
+            mv *.java java_files/
             python main.py
+            mv java_files/*.java ./
           else
             echo "No .java files found to process."
           fi
@@ -45,3 +48,6 @@ jobs:
       - name: Upload results
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
+        with:
+          name: processed-java-files
+          path: '*.java'
