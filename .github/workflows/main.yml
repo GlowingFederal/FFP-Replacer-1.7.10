@@ -32,13 +32,13 @@ jobs:
           echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
-      - name: Run Python script on .java files
+      - name: Debugging File Paths
         run: |
-          python main.py
+          find java_files/ -type f -name "*.java"
+
+      - name: Run Python script on .java files
+        run: python main.py
 
       - name: Upload results
         if: ${{ always() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-java-files
-          path: 'java_files/**/*.java'
+        uses: actions/upload
