@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Correct usage of a GitHub Action
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v4  # Correct usage of a GitHub Action
         with:
           python-version: '3.9'
 
@@ -23,8 +23,7 @@ jobs:
           curl -H "Authorization: token ${{ secrets.GH_PAT }}" -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
 
       - name: Verify Python script
-        run: |
-          cat main.py
+        run: cat main.py
 
       - name: Install dependencies
         run: |
@@ -33,12 +32,14 @@ jobs:
           pip install -r requirements.txt || true
 
       - name: Debugging File Paths
-        run: |
-          find java_files/ -type f -name "*.java"
+        run: find java_files/ -type f -name "*.java"
 
       - name: Run Python script on .java files
         run: python main.py
 
       - name: Upload results
         if: ${{ always() }}
-        uses: actions/upload
+        uses: actions/upload-artifact@v4  # Correct usage of a GitHub Action
+        with:
+          name: processed-java-files
+          path: 'updated_files/**/*'  # Upload the files from the output directory
