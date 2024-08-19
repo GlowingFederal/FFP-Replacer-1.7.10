@@ -34,17 +34,7 @@ jobs:
 
       - name: Run Python script on .java files
         run: |
-          shopt -s nullglob
-          java_files=(java_files/**/*.java)  # Match all .java files in the java_files directory
-          if [ ${#java_files[@]} -gt 0 ]; then
-            for file in "${java_files[@]}"; do
-              if [[ "$file" == *.java ]]; then
-                python main.py "$file"  # Process each .java file
-              fi
-            done
-          else
-            echo "No .java files found to process."
-          fi
+          python main.py
 
       - name: Upload results
         if: ${{ always() }}
