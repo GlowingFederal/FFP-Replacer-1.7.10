@@ -1,30 +1,33 @@
-name: Process Java Code
+name: Process java files
 
 on:
   push:
     paths:
       - 'java_files/**/*.java'
-  workflow_dispatch:  # Enables manual triggers
-
+  workflow_dispatch:
 
 jobs:
-  process:
+  debug:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: List repository files after checkout
-        run: ls -R
-
-      - name: Download Python script
+      - name: List repository files
         run: |
-          curl -H "Authorization: token ${{ secrets.GH_PAT }}" -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
+          echo "Files in the workspace:"
+          ls -R
 
-      - name: Verify downloaded Python script
+      - name: Verify current directory
+        run: pwd
+
+      - name: Ensure file permissions
+        run: chmod +r main.py
+
+      - name: Verify Python script
         run: |
           if [ -f main.py ]; then
             echo "main.py exists!"
@@ -34,7 +37,7 @@ jobs:
           fi
 
       - name: Run Python script
-        run: python main.py
+        run: python main.py || exit 1
 
       - name: Install dependencies
         run: |
