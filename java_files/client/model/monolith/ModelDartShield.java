@@ -1,0 +1,152 @@
+package com.flansmod.client.model.monolith;
+
+import com.flansmod.client.model.ModelGun;
+import com.flansmod.client.tmt.ModelRendererTurbo;
+import net.minecraft.client.model.ModelBase;
+
+public class ModelDartShield extends ModelGun {
+  int textureX = 128;
+  
+  int textureY = 128;
+  
+  public ModelDartShield() {
+    this.gunModel = new ModelRendererTurbo[34];
+    this.ammoModel = new ModelRendererTurbo[6];
+    initgunModel_1();
+    initammoModel_1();
+    translateAll(0.0F, 0.0F, 0.0F);
+    flipAll();
+  }
+  
+  private void initgunModel_1() {
+    this.gunModel[0] = new ModelRendererTurbo((ModelBase)this, 49, 1, this.textureX, this.textureY);
+    this.gunModel[1] = new ModelRendererTurbo((ModelBase)this, 81, 1, this.textureX, this.textureY);
+    this.gunModel[2] = new ModelRendererTurbo((ModelBase)this, 1, 9, this.textureX, this.textureY);
+    this.gunModel[3] = new ModelRendererTurbo((ModelBase)this, 25, 17, this.textureX, this.textureY);
+    this.gunModel[4] = new ModelRendererTurbo((ModelBase)this, 73, 1, this.textureX, this.textureY);
+    this.gunModel[5] = new ModelRendererTurbo((ModelBase)this, 41, 25, this.textureX, this.textureY);
+    this.gunModel[6] = new ModelRendererTurbo((ModelBase)this, 105, 1, this.textureX, this.textureY);
+    this.gunModel[7] = new ModelRendererTurbo((ModelBase)this, 25, 9, this.textureX, this.textureY);
+    this.gunModel[8] = new ModelRendererTurbo((ModelBase)this, 113, 17, this.textureX, this.textureY);
+    this.gunModel[9] = new ModelRendererTurbo((ModelBase)this, 41, 9, this.textureX, this.textureY);
+    this.gunModel[10] = new ModelRendererTurbo((ModelBase)this, 1, 17, this.textureX, this.textureY);
+    this.gunModel[11] = new ModelRendererTurbo((ModelBase)this, 25, 17, this.textureX, this.textureY);
+    this.gunModel[12] = new ModelRendererTurbo((ModelBase)this, 49, 25, this.textureX, this.textureY);
+    this.gunModel[13] = new ModelRendererTurbo((ModelBase)this, 81, 25, this.textureX, this.textureY);
+    this.gunModel[14] = new ModelRendererTurbo((ModelBase)this, 9, 9, this.textureX, this.textureY);
+    this.gunModel[15] = new ModelRendererTurbo((ModelBase)this, 73, 1, this.textureX, this.textureY);
+    this.gunModel[16] = new ModelRendererTurbo((ModelBase)this, 41, 1, this.textureX, this.textureY);
+    this.gunModel[17] = new ModelRendererTurbo((ModelBase)this, 89, 1, this.textureX, this.textureY);
+    this.gunModel[18] = new ModelRendererTurbo((ModelBase)this, 57, 25, this.textureX, this.textureY);
+    this.gunModel[19] = new ModelRendererTurbo((ModelBase)this, 81, 25, this.textureX, this.textureY);
+    this.gunModel[20] = new ModelRendererTurbo((ModelBase)this, 105, 1, this.textureX, this.textureY);
+    this.gunModel[21] = new ModelRendererTurbo((ModelBase)this, 121, 1, this.textureX, this.textureY);
+    this.gunModel[22] = new ModelRendererTurbo((ModelBase)this, 33, 9, this.textureX, this.textureY);
+    this.gunModel[23] = new ModelRendererTurbo((ModelBase)this, 41, 17, this.textureX, this.textureY);
+    this.gunModel[24] = new ModelRendererTurbo((ModelBase)this, 97, 25, this.textureX, this.textureY);
+    this.gunModel[25] = new ModelRendererTurbo((ModelBase)this, 113, 25, this.textureX, this.textureY);
+    this.gunModel[26] = new ModelRendererTurbo((ModelBase)this, 49, 9, this.textureX, this.textureY);
+    this.gunModel[27] = new ModelRendererTurbo((ModelBase)this, 1, 33, this.textureX, this.textureY);
+    this.gunModel[28] = new ModelRendererTurbo((ModelBase)this, 57, 9, this.textureX, this.textureY);
+    this.gunModel[29] = new ModelRendererTurbo((ModelBase)this, 9, 33, this.textureX, this.textureY);
+    this.gunModel[30] = new ModelRendererTurbo((ModelBase)this, 17, 33, this.textureX, this.textureY);
+    this.gunModel[31] = new ModelRendererTurbo((ModelBase)this, 113, 33, this.textureX, this.textureY);
+    this.gunModel[32] = new ModelRendererTurbo((ModelBase)this, 17, 1, this.textureX, this.textureY);
+    this.gunModel[33] = new ModelRendererTurbo((ModelBase)this, 1, 41, this.textureX, this.textureY);
+    this.gunModel[0].func_78790_a(0.0F, 0.0F, 0.0F, 1, 6, 14, 0.0F);
+    this.gunModel[0].func_78793_a(3.0F, 0.0F, 2.0F);
+    this.gunModel[1].addShapeBox(0.0F, 10.0F, 0.0F, 1, 4, 14, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F);
+    this.gunModel[1].func_78793_a(3.0F, -4.0F, 2.0F);
+    this.gunModel[2].addShapeBox(0.0F, 10.0F, 0.0F, 1, 4, 14, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
+    this.gunModel[2].func_78793_a(3.0F, -14.0F, 2.0F);
+    this.gunModel[3].addShapeBox(0.0F, 14.0F, 0.0F, 1, 3, 12, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F);
+    this.gunModel[3].func_78793_a(3.0F, -4.0F, 3.0F);
+    this.gunModel[4].addShapeBox(0.0F, 17.0F, 0.0F, 1, 1, 8, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F);
+    this.gunModel[4].func_78793_a(3.0F, -4.0F, 5.0F);
+    this.gunModel[5].addShapeBox(0.0F, 14.0F, 0.0F, 1, 3, 12, 0.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
+    this.gunModel[5].func_78793_a(3.0F, -21.0F, 3.0F);
+    this.gunModel[6].addShapeBox(0.0F, 17.0F, 0.0F, 1, 1, 8, 0.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, -2.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
+    this.gunModel[6].func_78793_a(3.0F, -25.0F, 5.0F);
+    this.gunModel[7].addShapeBox(0.0F, 0.0F, 0.0F, 1, 2, 4, 0.0F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
+    this.gunModel[7].func_78793_a(3.3F, 1.0F, 7.0F);
+    this.gunModel[8].addShapeBox(0.0F, 0.0F, 0.0F, 1, 2, 4, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, -0.5F, 0.0F, 0.0F, -0.5F);
+    this.gunModel[8].func_78793_a(3.3F, 3.0F, 7.0F);
+    this.gunModel[9].addShapeBox(0.0F, 0.0F, 0.0F, 1, 1, 3, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.0F);
+    this.gunModel[9].func_78793_a(4.3F, 2.5F, 7.5F);
+    this.gunModel[10].addShapeBox(0.0F, -1.0F, 0.0F, 1, 1, 3, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, -0.95F, -1.0F, 0.0F, -0.95F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.0F);
+    this.gunModel[10].func_78793_a(4.3F, 2.51F, 7.5F);
+    this.gunModel[11].addShapeBox(0.0F, -1.0F, 0.0F, 1, 1, 3, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -1.0F, 0.0F, -0.95F, -1.0F, 0.0F, -0.95F, -1.0F, 0.0F, 0.0F, -1.0F);
+    this.gunModel[11].func_78793_a(4.3F, 4.51F, 7.5F);
+    this.gunModel[12].addShapeBox(0.0F, 0.0F, 0.0F, 1, 30, 24, 0.0F, -0.45F, 0.0F, 0.0F, -0.45F, 0.0F, 0.0F, -0.45F, 0.0F, -10.0F, -0.45F, 0.0F, -10.0F, -0.45F, -10.0F, 0.0F, -0.45F, -10.0F, 0.0F, -0.45F, -10.0F, -10.0F, -0.45F, -10.0F, -10.0F);
+    this.gunModel[12].func_78793_a(3.5F, -7.5F, 2.0F);
+    this.gunModel[13].func_78790_a(0.0F, 0.0F, 0.0F, 1, 1, 13, 0.0F);
+    this.gunModel[13].func_78793_a(2.5F, 3.0F, 2.5F);
+    this.gunModel[14].addShapeBox(-0.5F, -6.5F, -0.5F, 1, 7, 1, 0.0F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F);
+    this.gunModel[14].func_78793_a(2.5F, 4.0F, 4.0F);
+    this.gunModel[15].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 5, 1, 0.0F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.gunModel[15].func_78793_a(2.5F, -1.0F, 4.0F);
+    this.gunModel[16].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 1, 1, 0.0F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.gunModel[16].func_78793_a(2.5F, 4.0F, 4.0F);
+    this.gunModel[17].addShapeBox(-0.5F, -0.5F, -0.5F, 1, 2, 1, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F);
+    this.gunModel[17].func_78793_a(2.5F, 5.0F, 4.0F);
+    this.gunModel[18].addShapeBox(-0.5F, -6.0F, -1.5F, 1, 3, 3, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F);
+    this.gunModel[18].func_78793_a(2.5F, 4.0F, 4.0F);
+    this.gunModel[19].addShapeBox(-1.5F, -6.0F, -0.5F, 3, 3, 1, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F);
+    this.gunModel[19].func_78793_a(2.5F, 4.0F, 4.0F);
+    this.gunModel[20].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 1, 1, 0.0F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.gunModel[20].func_78793_a(2.5F, 4.0F, 5.5F);
+    this.gunModel[21].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 5, 1, 0.0F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.gunModel[21].func_78793_a(2.5F, -1.0F, 5.5F);
+    this.gunModel[22].addShapeBox(-0.5F, -0.5F, -0.5F, 1, 2, 1, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F);
+    this.gunModel[22].func_78793_a(2.5F, 5.0F, 5.5F);
+    this.gunModel[23].addShapeBox(-0.5F, -6.5F, -0.5F, 1, 7, 1, 0.0F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F);
+    this.gunModel[23].func_78793_a(2.5F, 4.0F, 5.5F);
+    this.gunModel[24].addShapeBox(-1.5F, -6.0F, -0.5F, 3, 3, 1, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F);
+    this.gunModel[24].func_78793_a(2.5F, 4.0F, 5.5F);
+    this.gunModel[25].addShapeBox(-0.5F, -6.0F, -1.5F, 1, 3, 3, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F);
+    this.gunModel[25].func_78793_a(2.5F, 4.0F, 5.5F);
+    this.gunModel[26].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 1, 1, 0.0F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.gunModel[26].func_78793_a(2.5F, 4.0F, 7.0F);
+    this.gunModel[27].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 5, 1, 0.0F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.gunModel[27].func_78793_a(2.5F, -1.0F, 7.0F);
+    this.gunModel[28].addShapeBox(-0.5F, -0.5F, -0.5F, 1, 2, 1, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F);
+    this.gunModel[28].func_78793_a(2.5F, 5.0F, 7.0F);
+    this.gunModel[29].addShapeBox(-0.5F, -6.5F, -0.5F, 1, 7, 1, 0.0F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F);
+    this.gunModel[29].func_78793_a(2.5F, 4.0F, 7.0F);
+    this.gunModel[30].addShapeBox(-1.5F, -7.0F, -0.5F, 3, 3, 1, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F);
+    this.gunModel[30].func_78793_a(2.5F, 5.0F, 7.0F);
+    this.gunModel[31].addShapeBox(-0.5F, -6.0F, -1.5F, 1, 3, 3, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F);
+    this.gunModel[31].func_78793_a(2.5F, 4.0F, 7.0F);
+    this.gunModel[32].func_78790_a(0.0F, 0.0F, 0.0F, 1, 1, 5, 0.0F);
+    this.gunModel[32].func_78793_a(2.2F, 3.0F, 3.0F);
+    this.gunModel[33].func_78790_a(0.0F, 0.0F, 0.0F, 1, 1, 4, 0.0F);
+    this.gunModel[33].func_78793_a(2.2F, 9.5F, 3.5F);
+  }
+  
+  private void initammoModel_1() {
+    this.ammoModel[0] = new ModelRendererTurbo((ModelBase)this, 1, 1, this.textureX, this.textureY);
+    this.ammoModel[1] = new ModelRendererTurbo((ModelBase)this, 9, 1, this.textureX, this.textureY);
+    this.ammoModel[2] = new ModelRendererTurbo((ModelBase)this, 17, 1, this.textureX, this.textureY);
+    this.ammoModel[3] = new ModelRendererTurbo((ModelBase)this, 25, 1, this.textureX, this.textureY);
+    this.ammoModel[4] = new ModelRendererTurbo((ModelBase)this, 33, 1, this.textureX, this.textureY);
+    this.ammoModel[5] = new ModelRendererTurbo((ModelBase)this, 49, 1, this.textureX, this.textureY);
+    this.ammoModel[0].addShapeBox(-0.5F, -6.5F, -0.5F, 1, 7, 1, 0.0F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F, -0.25F, 0.0F, -0.25F);
+    this.ammoModel[0].func_78793_a(1.0F, -2.0F, 0.0F);
+    (this.ammoModel[0]).field_78808_h = 1.5707964F;
+    this.ammoModel[1].addShapeBox(-0.5F, -0.5F, -0.5F, 1, 5, 1, 0.0F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.ammoModel[1].func_78793_a(1.0F, -2.0F, 0.0F);
+    (this.ammoModel[1]).field_78808_h = 1.5707964F;
+    this.ammoModel[2].addShapeBox(-0.5F, 4.5F, -0.5F, 1, 1, 1, 0.0F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.2F, 0.0F, -0.2F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F, -0.4F, 0.0F, -0.4F);
+    this.ammoModel[2].func_78793_a(1.0F, -2.0F, 0.0F);
+    (this.ammoModel[2]).field_78808_h = 1.5707964F;
+    this.ammoModel[3].addShapeBox(-0.5F, 0.5F, -0.5F, 1, 2, 1, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F, -0.1F, 0.0F, -0.1F);
+    this.ammoModel[3].func_78793_a(1.0F, -2.0F, 0.0F);
+    (this.ammoModel[3]).field_78808_h = 1.5707964F;
+    this.ammoModel[4].addShapeBox(-0.5F, -6.0F, -1.5F, 1, 3, 3, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F, -0.3F, 0.0F, -1.0F);
+    this.ammoModel[4].func_78793_a(1.0F, -2.0F, 0.0F);
+    (this.ammoModel[4]).field_78808_h = 1.5707964F;
+    this.ammoModel[5].addShapeBox(-1.5F, -6.0F, -0.5F, 3, 3, 1, 0.0F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -0.3F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F, -1.0F, 0.0F, -0.3F);
+    this.ammoModel[5].func_78793_a(1.0F, -2.0F, 0.0F);
+    (this.ammoModel[5]).field_78808_h = 1.5707964F;
+  }
+}
