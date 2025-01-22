@@ -35,7 +35,7 @@ jobs:
         run: find java_files/ -type f -name "*.java"
 
       - name: Run Python script on .java files
-        run: python /FFP-Replacer-Flans/main.py
+        run: python /home/zealot/Documents/MCHELI-O 1.12.2 SRC/FFP-Replacer-Flans/main.py
 
       - name: Upload results
         if: ${{ always() }}
