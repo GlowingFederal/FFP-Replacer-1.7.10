@@ -3,7 +3,7 @@ name: Process Java Code
 on:
   push:
     paths:
-      - 'java_files/**/*.java'  # Trigger on any .java file within java_files directory
+      - 'java_files/**/*.java'
 
 jobs:
   process:
@@ -11,35 +11,45 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Correct usage of a GitHub Action
-
-      - name: Set up Python
-        uses: actions/setup-python@v4  # Correct usage of a GitHub Action
+        uses: actions/checkout@v3
         with:
-          python-version: '3.9'
+          fetch-depth: 0
+
+      - name: List repository files after checkout
+        run: ls -R
 
       - name: Download Python script
         run: |
           curl -H "Authorization: token ${{ secrets.GH_PAT }}" -o main.py https://raw.githubusercontent.com/Buhnana/FFP-Replacer/main/main.py
 
-      - name: Verify Python script
-        run: cat main.py
+      - name: Verify downloaded Python script
+        run: |
+          if [ -f main.py ]; then
+            echo "main.py exists!"
+          else
+            echo "main.py not found!"
+            exit 1
+          fi
+
+      - name: Run Python script
+        run: python main.py
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
-      - name: Debugging File Paths
+      - name: Debugging file paths
         run: find java_files/ -type f -name "*.java"
 
       - name: Run Python script on .java files
-        run: python /home/zealot/Documents/MCHELI-O 1.12.2 SRC/FFP-Replacer-Flans/main.py
+        run: |
+          find java_files/ -type f -name "*.java" > file_list.txt
+          python main.py file_list.txt
 
       - name: Upload results
         if: ${{ always() }}
-        uses: actions/upload-artifact@v4  # Correct usage of a GitHub Action
+        uses: actions/upload-artifact@v4
         with:
           name: processed-java-files
-          path: 'updated_files/**/*'  # Upload the files from the output directory
+          path: 'updated_files/**/*'
