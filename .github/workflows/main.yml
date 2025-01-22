@@ -1,13 +1,13 @@
-name: Process java files
+name: Process Java Code
 
 on:
   push:
     paths:
-      - 'java_files/**/*.java'
-  workflow_dispatch:
+      - 'java_files/**/*.java'  # Trigger on any .java file within java_files directory
+  workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
-  debug:
+  process:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,40 +21,32 @@ jobs:
           echo "Files in the workspace:"
           ls -R
 
-      - name: Verify current directory
-        run: pwd
-
-      - name: Ensure file permissions
-        run: chmod +r main.py
-
-      - name: Verify Python script
+      - name: Check if FFPMappings.csv exists
         run: |
-          if [ -f main.py ]; then
-            echo "main.py exists!"
+          if [ -f FFPMappings.csv ]; then
+            echo "FFPMappings.csv exists!"
           else
-            echo "main.py not found!"
+            echo "FFPMappings.csv not found!"
             exit 1
           fi
 
-      - name: Run Python script
-        run: python main.py || exit 1
+      - name: Set up Python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          echo "No dependencies required" > requirements.txt
           pip install -r requirements.txt || true
 
-      - name: Debugging file paths
-        run: find java_files/ -type f -name "*.java"
-
-      - name: Run Python script on .java files
-        run: |
-          find java_files/ -type f -name "*.java" > file_list.txt
-          python main.py file_list.txt
+      - name: Run Python script
+        run: python main.py
 
       - name: Upload results
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: processed-java-files
-          path: 'updated_files/**/*'
+          path: 'updated_files/**/*'  # Upload the files from the output directory
