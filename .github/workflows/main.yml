@@ -35,7 +35,7 @@ jobs:
         run: find java_files/ -type f -name "*.java"
 
       - name: Run Python script on .java files
-        run: python main.py
+        run: python /FFP-Replacer-Flans/main.py
 
       - name: Upload results
         if: ${{ always() }}
