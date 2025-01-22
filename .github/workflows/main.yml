@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'java_files/**/*.java'
+  workflow_dispatch:  # Enables manual triggers
+
 
 jobs:
   process:
