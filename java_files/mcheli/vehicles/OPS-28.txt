@@ -1,0 +1,28 @@
+DisplayName = OPS-28 Radar
+AddDisplayName = ja_JP, OPS-28 低空警戒/対水上捜索レーダー
+ItemID = 28614
+MaxHP = 80
+EnableEntityRadar = true
+HideEntity = true
+DamageFactor = 0
+CameraZoom = 10
+CameraPosition = 0.0, 1.5, 0.0
+ArmorMinDamage = 20
+ArmorMaxDamage = 500
+HUD = vehicle
+ArmorMinDamage = 20
+ArmorMaxDamage = 5000
+ArmorDamageFactor = 0.95
+AddSeat = 0.0, 0.0, -1.0
+
+HasAARadar = true
+RadarDataLinkOutput = true
+RadarMinRadius = 20
+RadarMaxRadius = 250
+RadarMaxAlt = 100
+
+AddPartRotation = 0.0, 1.0, 0.0,  0,-1,0,  6.0, true
+
+AddWeapon = ops-28, 0.0, 1.18, 0.0,  0.0, 0.0
+
+AddRecipe = "ZY ",  "ZXX",  "ZXZ",  X, iron_block, Y, glass, Z, iron_ingot

@@ -1,0 +1,19 @@
+DisplayName = FAB-500 SH
+Type = Bomb
+Power = 60
+Acceleration = 0.05
+Explosion = 19
+ExplosionBlock = 9
+ExplosionInWater = 0
+Flaming = false
+Sight = None
+Delay = 8
+Sound = bomb_snd
+ModelBullet = fab500sh
+Gravity = -0.01
+
+Round = 12
+
+MaxAmmo = 12
+SuppliedNum = 1
+Item =  2, mcheli:ammo

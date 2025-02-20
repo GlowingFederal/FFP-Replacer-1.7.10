@@ -1,0 +1,23 @@
+DisplayName = KPVT 14.5mm Machine Gun [API]
+AddDisplayName = ru_RU,  œ¬“ 14,5ÏÏ [API]
+Type = MachineGun2
+Power = 28
+DamageFactor = tank, 0.5
+DamageFactor = plane, 0.25
+DamageFactor = helicopter, 0.25
+Acceleration = 20.0
+Flaming = false
+Sight = MoveSight
+Delay = 1
+SoundVolume = 3
+SoundPitch = 1.0
+Sound = gun_h1_snd
+Accuracy = 1.0
+ModeNum = 1
+Round = 50
+ReloadTime = 150
+SetCartridge = cartridge, 0,   0, 0, 3.50, -0.04, 0.50
+
+MaxAmmo = 500
+SuppliedNum = 80
+Item =  1, mcheli:ammo

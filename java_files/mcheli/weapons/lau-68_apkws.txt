@@ -1,0 +1,17 @@
+DisplayName = LAU-68/APKWS
+Type = TVMissile
+Power = 70
+Acceleration = 1.6
+Explosion = 6
+ExplosionBlock = 2
+ArmoredBlockDamageDivisor = -1.0
+Flaming = false
+Sight = MoveSight
+ModelBullet = hydra70
+Sound = rocket_snd
+Delay = 30
+
+
+MaxAmmo = 7
+SuppliedNum = 2
+Item =  1, mcheli:ammo

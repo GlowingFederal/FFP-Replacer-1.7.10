@@ -1,0 +1,20 @@
+DisplayName = R-60BM[AAM]
+Type = AAMissile
+Power = 42
+Acceleration = 3.5
+Explosion = 4
+ExplosionBlock = 1
+Flaming = false
+Sight = MissileSight
+Delay = 8
+LockTime = 40
+ProximityFuseDist = 3
+ModelBullet = R-60BM
+Sound = missile_9_snd
+TrajectoryParticleStartTick = 10
+SoundVolume = 3
+
+
+MaxAmmo = 2
+SuppliedNum = 1
+Item =  1, mcheli:ammo

@@ -1,0 +1,15 @@
+DisplayName = MK82 bomb
+Type = Bomb
+Power = 45
+Acceleration = 0.1
+Explosion = 12
+ExplosionBlock = 4
+Flaming = false
+Sight = None
+Delay = 5
+Sound = bomb_snd
+
+
+MaxAmmo = 5
+SuppliedNum = 1
+Item =  5, mcheli:ammo

@@ -1,0 +1,28 @@
+DisplayName = GShG-7.62 7.62mm Machine Gun
+Type = MachineGun1
+Power = 12
+DamageFactor = tank, 0.5
+DamageFactor = plane, 0.5
+DamageFactor = helicopter, 0.5
+Acceleration = 14.32
+Explosion = 0
+Flaming = false
+Sight = MoveSight
+Delay = 0
+SoundDelay = 3
+SmokeSize = 0
+Accuracy = 1.0
+; SetCartridge = model_name, Acceleration, Yaw, Pitch, ModelScale, Gravity, Bound
+SetCartridge = cartridge, 0.0, 0, 0, 2.00, -0.04, 0.40
+Sound = gun_l2_snd
+HeatCount = 2
+MaxHeatCount = 2400
+
+AddMuzzleFlash      =  0.6,      0.22,        2,  170,254,159,84
+AddMuzzleFlash      =  0.5,      0.20,        1,  150,254,219,184
+AddMuzzleFlashSmoke =  2.2,  1,   5.0,  2.0, 15,  180,250,245,240
+AddMuzzleFlashSmoke =  3.2,  1,   3.0,  1.0,  5,  180,220,217,214
+
+MaxAmmo = 6800
+SuppliedNum = 250
+Item =  1, mcheli:ammo

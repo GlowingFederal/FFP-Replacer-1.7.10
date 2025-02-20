@@ -1,0 +1,22 @@
+DisplayName = 9M119M
+Type = TVMissile
+Power = 100
+Acceleration = 1.6
+Explosion = 6
+ExplosionBlock = 2
+Flaming = false
+Sight = MoveSight
+Delay = 141
+ReloadTime = 142
+Round = 1
+ModelBullet = 9M113
+Sound = missile_2_snd
+Group = MainGun
+
+DamageFactor = tank, 2.0
+DamageFactor = plane, 10.0
+DamageFactor = helicopter, 10.0
+
+MaxAmmo = 8
+SuppliedNum = 1
+Item =  1, mcheli:ammo

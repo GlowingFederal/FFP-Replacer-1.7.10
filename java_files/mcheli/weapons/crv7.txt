@@ -1,0 +1,17 @@
+DisplayName = CRV7 Rocket
+Type = Rocket
+Power = 70
+ModelBullet = crv7
+Acceleration = 4.5
+Explosion = 6
+ExplosionBlock = 2
+ArmoredBlockDamageDivisor = -1.0
+Flaming = false
+Sight = MoveSight
+Sound = rocket_snd
+Delay = 2
+ModeNum = 1
+
+MaxAmmo = 26
+SuppliedNum = 2
+Item =  1, mcheli:ammo

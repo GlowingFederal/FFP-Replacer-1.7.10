@@ -1,0 +1,19 @@
+DisplayName = 9M114
+Type = ATMissile
+Power = 104
+Acceleration = 1.6
+Explosion = 4
+Flaming = true
+Sight = MissileSight
+Delay = 100
+ModeNum = 2
+Sound = missile_1_snd
+RidableOnly = true
+
+DamageFactor = tank, 2.0
+DamageFactor = plane, 10.0
+DamageFactor = helicopter, 10.0
+
+MaxAmmo = 8
+SuppliedNum = 2
+Item =  1, mcheli:ammo

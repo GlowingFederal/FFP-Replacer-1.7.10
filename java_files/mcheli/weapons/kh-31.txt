@@ -1,0 +1,19 @@
+DisplayName = Kh-31
+Type = GPSMissile
+MinShotAlt = 200
+MinShotDistance = 700
+SubTypeGPS = Cruise
+CanLoadChunks = true
+Power = 400
+Acceleration = 4.0
+Explosion = 9
+Flaming = true
+Sight = MoveSight
+Delay = 200
+Sound = missile_2_snd
+
+MaxAmmo = 8
+SuppliedNum = 4
+Item =  3, mcheli:ammo
+Item =  3, mcheli:ammo
+Item =  3, redstone

@@ -1,0 +1,20 @@
+DisplayName = AGM-130
+Type = TVMissile
+Power = 200
+Acceleration = 1.6
+Explosion = 30
+ExplosionBlock = 10
+Sight = MoveSight
+Delay = 40
+ModeNum = 1
+ModelBullet = agm130
+Sound = missile_1_snd
+DisableSmoke = true
+
+DamageFactor = tank, 2.0
+DamageFactor = plane, 10.0
+DamageFactor = helicopter, 10.0
+
+MaxAmmo = 2
+SuppliedNum = 1
+Item =  20, mcheli:ammo

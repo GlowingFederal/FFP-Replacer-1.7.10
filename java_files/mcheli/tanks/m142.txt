@@ -1,0 +1,99 @@
+﻿DisplayName = M142 HIMARS
+AddDisplayName = en_US, M142 HIMARS
+AddDisplayName = ru_RU, M142 HIMARS
+ItemID = 34159
+MaxHp = 100
+Speed = 0.85
+Sound = mbt_run
+ThrottleUpDown = 10.0
+MobilityYawOnGround = 2.0
+MinRotationPitch = -65
+MaxRotationPitch = 0
+MobilityRoll = 0
+Gravity = -0.1
+GravityInWater = -0.1
+DamageFactor = 0.0
+CameraZoom = 4
+CameraRotationSpeed = 35
+MaxFuel = 1500
+FuelConsumption = 2.5
+StepHeight = 1.5
+EnableBack = true
+OnGroundPitchFactor = 2.0
+OnGroundRollFactor  = 1.3
+ThirdPersonDist = 15
+DefaultFreelook = true
+
+ArmorMinDamage = 10
+ArmorMaxDamage = 280
+ArmorDamageFactor = 0.95
+
+WeightType =  Car
+WeightedCenterZ = 0
+
+SetWheelPos =  1.74,  -0.47,  7.16,  1.57,-0.6 
+
+MotionFactor = 0.9
+
+AddSeat =  0.9616, 2.10, 4.5250
+AddGunnerSeat = -0.9580, 2.10, 4.5250, 0.0018, 4.8915, 4.1624, false, -60, 60
+
+HUD = bnr32_hud, mbt_hud
+
+AddWeapon = none,  0.5773, 3.1825, -3.1001,  0.0, 0.0, false,1, 0,-180,180, -80, 7
+
+AddWeapon = m30,  0.5773, 3.1825, -3.1001,  0.0, 0.0, false,2, 0,-180,180, -80, 7
+AddWeapon = m30,  0.0018, 3.1825, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+AddWeapon = m30, -0.5738, 3.1825, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+
+AddWeapon = m30,  0.5773, 2.6039, -3.1001,  0.0, 0.0, false,2, 0,-180,180, -80, 7
+AddWeapon = m30,  0.0018, 2.6039, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+AddWeapon = m30, -0.5738, 2.6039, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+
+AddWeapon = m30a1,  0.5773, 3.1825, -3.1001,  0.0, 0.0, false,2, 0,-180,180, -80, 7
+AddWeapon = m30a1,  0.0018, 3.1825, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+AddWeapon = m30a1, -0.5738, 3.1825, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+
+AddWeapon = m30a1,  0.5773, 2.6039, -3.1001,  0.0, 0.0, false,2, 0,-180,180, -80, 7
+AddWeapon = m30a1,  0.0018, 2.6039, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+AddWeapon = m30a1, -0.5738, 2.6039, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+
+AddWeapon = m31a2,  0.5773, 3.1825, -3.1001,  0.0, 0.0, false,2, 0,-180,180, -80, 7
+AddWeapon = m31a2,  0.0018, 3.1825, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+AddWeapon = m31a2, -0.5738, 3.1825, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+
+AddWeapon = m31a2,  0.5773, 2.6039, -3.1001,  0.0, 0.0, false,2, 0,-180,180, -80, 7
+AddWeapon = m31a2,  0.0018, 2.6039, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+AddWeapon = m31a2, -0.5738, 2.6039, -3.1001,  0.0, 0.0,  false,2, 0,-180,180, -80, 7
+
+
+AddPartWeapon = m30 / m30a1  / m31a2, false, true, false,  0, 1.7470, -3.6588, 0
+AddPartWeaponChild = false, true, 0.00, 1.7846, -5.1856
+
+AddPartCanopy   = -1.7964, 2.7771, 5.5142,  0, 1, 0,  60
+AddPartCanopy   =  1.7954, 2.7742, 5.5075,  0, 1, 0, -60
+
+RideRack = c5, 1
+RideRack = c5, 2
+
+RideRack = c5m, 1
+RideRack = c5m, 2
+
+PivotTurnThrottle = 0.1
+
+AddPartWheel =  1.5502, 0.5969,  3.8655
+AddPartWheel =  1.5504, 0.5969, -1.7213
+AddPartWheel =  1.5502, 0.5968, -3.5636
+
+AddPartWheel = -1.5510, 0.5969,  3.8665
+AddPartWheel = -1.5513, 0.5969, -1.7213
+AddPartWheel = -1.5510, 0.5968, -3.5636
+
+AddPartSteeringWheel = 0.9093, 2.5539, 4.9627,   0, 1, -2.1445,   130
+
+BoundingBox =   0.00, 2.6572, -3.8730, 4.00, 2.0, 2.10
+BoundingBox =   0.00, 2.6572, -1.8393, 4.00, 2.0, 2.10
+BoundingBox =   0.00, 0.7457, -3.0802, 4.00, 2.0
+BoundingBox =   0.00, 1.1761,  0.8340, 4.00, 4.0
+BoundingBox =  -0.6564, 2.1735, 1.3832, 1.00, 1.0
+BoundingBox =   0.6774, 2.1735, 1.3832, 1.00, 1.0

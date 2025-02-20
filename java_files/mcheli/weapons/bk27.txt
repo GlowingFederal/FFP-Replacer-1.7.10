@@ -1,0 +1,18 @@
+DisplayName = BK-27 27mm Revolver Cannon
+Type = MachineGun1
+Power = 28
+Acceleration = 19.4
+Explosion = 1
+ExplosionBlock = 0
+Flaming = false
+Sight = MoveSight
+Delay = 0
+SoundDelay = 1
+Accuracy = 1.0
+HeatCount = 12
+MaxHeatCount = 1000
+Sound = gun_h3_snd
+
+MaxAmmo = 360
+SuppliedNum = 32
+Item =  1, mcheli:ammo

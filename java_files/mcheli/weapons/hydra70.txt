@@ -1,0 +1,20 @@
+DisplayName = Hydra 70mm Rocket
+Type = Rocket
+Power = 70
+ModelBullet = hydra70
+Acceleration = 4.5
+Explosion = 6
+ExplosionBlock = 2
+ArmoredBlockDamageDivisor = -1.0
+Sound = rocket_snd
+Flaming = false
+Sight = MoveSight
+Delay = 2
+
+; Particle test
+;TrajectoryParticle = heart
+;TrajectoryParticle = fireworksSpark
+
+MaxAmmo = 38
+SuppliedNum = 2
+Item =  1, mcheli:ammo

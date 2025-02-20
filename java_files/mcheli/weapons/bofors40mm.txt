@@ -1,0 +1,23 @@
+DisplayName = Bofors L/60 40mm Autocannon [HE]
+Type = MachineGun2
+Power = 36
+ModelBullet = bullet76mm
+Acceleration = 9.6
+Explosion = 3
+ExplosionBlock = 1
+Flaming = false
+Sight = MoveSight
+Delay = 14
+SoundPitch = 0.6
+SoundVolume = 20
+Sound = cannon_2_snd
+Accuracy = 1.0
+HeatCount = 20
+MaxHeatCount = 600
+ReloadTime = 20
+Round = 4
+;SetCartridge = cartridge, 0.1,  180, 0, 5.0, -0.04, 0.40
+
+MaxAmmo = 400
+SuppliedNum = 20
+Item =  1, mcheli:ammo

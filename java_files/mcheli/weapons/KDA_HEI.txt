@@ -1,0 +1,23 @@
+DisplayName = Oerlikon KDA 35mm Autocannon [HEI]
+Type = MachineGun2
+Power = 20
+DamageFactor = tank, 0.5
+Acceleration = 12.0
+Explosion = 1
+ExplosionBlock = 0
+Flaming = false
+Sight = MoveSight
+Delay = 0
+SoundVolume = 3
+SoundPitch = 1.0
+Sound = gun_h1_snd
+Accuracy = 1.0
+ModeNum = 1
+HeatCount = 5
+MaxHeatCount = 600
+
+SetCartridge = cartridge, 0,   0, 0, 3.50, -0.04, 0.50
+
+MaxAmmo = 680
+SuppliedNum = 40
+Item =  1, mcheli:ammo

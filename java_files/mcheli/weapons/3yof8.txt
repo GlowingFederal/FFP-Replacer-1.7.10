@@ -1,0 +1,24 @@
+DisplayName = 2A42 30mm Autocannon [HE-I]
+AddDisplayName = ru_RU, 2А42 [HE-I]
+Type = MachineGun1
+Power = 30
+DamageFactor = tank, 0.5
+Acceleration = 9.6
+Explosion = 2
+ExplosionBlock = 1
+Flaming = false
+Sight = MoveSight
+Delay = 3
+SoundVolume = 3
+SoundPitch = 1.0
+Sound = gun_h1_snd
+Accuracy = 1.0
+ModeNum = 1
+HeatCount = 10
+MaxHeatCount = 500
+
+SetCartridge = cartridge, 0,   0, 0, 3.50, -0.04, 0.50
+
+MaxAmmo = 340
+SuppliedNum = 30
+Item =  1, mcheli:ammo

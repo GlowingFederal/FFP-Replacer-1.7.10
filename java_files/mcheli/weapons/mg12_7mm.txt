@@ -1,0 +1,18 @@
+DisplayName = 12.7mm Machine gun
+Type = MachineGun1
+Power = 24
+Acceleration = 17.16
+Explosion = 0
+Flaming = false
+Sight = MoveSight
+Delay = 0
+;SoundDelay = 3
+Accuracy = 1.5
+HeatCount = 6
+MaxHeatCount = 300
+SoundPitch = 0.8
+Sound = gun_l1_snd
+
+MaxAmmo = 1200
+SuppliedNum = 100
+Item =  1, mcheli:ammo

@@ -1,0 +1,15 @@
+DisplayName = OPS-28
+Type = TargetingPod
+Delay = 2
+Sight = MoveSight
+SoundPitch = 1.0
+Sound = lockon
+SoundVolume = 5.0
+SoundPitchRandom = 0.0
+Length = 1370
+Radius = 300
+ArmorMinDamage = 20
+ArmorMaxDamage = 500
+;Target = planes/helicopters/vehicles/players/monsters/others
+Target = planes/helicopters/tanks/players/others
+MarkTime = 180

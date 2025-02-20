@@ -1,0 +1,22 @@
+DisplayName = AGM-158 JASSM
+Type = GPSMissile
+MinShotAlt = 200
+MinShotDistance = 700
+SubTypeGPS = Cruise
+CanLoadChunks = true
+Power = 200
+Acceleration = 1.8
+Explosion = 27
+ExplosionBlock = 9
+Sight = MoveSight
+ModelBullet = agm158
+Sound = missile_1_snd
+DisableSmoke = false
+
+DamageFactor = tank, 2.0
+DamageFactor = plane, 10.0
+DamageFactor = helicopter, 10.0
+
+MaxAmmo = 2
+SuppliedNum = 1
+Item =  30, mcheli:ammo

@@ -1,0 +1,24 @@
+DisplayName = MDH 14.5mm [HEI-T]
+AddDisplayName = ru_RU, 14,5?? [HEI-T]
+Type = MachineGun1
+Power = 8
+Acceleration = 20.0
+Explosion = 2
+Flaming = false
+Sight = MoveSight
+Delay = 2
+ReloadTime = 120
+Round = 500
+SoundVolume = 3
+SoundPitch = 1.0
+Sound = gun_h1_snd
+Accuracy = 1.5
+ModeNum = 1
+
+SetCartridge = cartridge, 0,   0, 0, 3.50, -0.04, 0.50
+
+MaxAmmo = 500
+SuppliedNum = 250
+Item =  2, mcheli:ammo
+Item =  2, mcheli:ammo
+

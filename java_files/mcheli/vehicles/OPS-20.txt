@@ -1,0 +1,22 @@
+DisplayName = OPS-20 Radar
+AddDisplayName = ja_JP, OPS-20 航海用レーダー
+ItemID = 28614
+MaxHP = 80
+EnableEntityRadar = true
+HideEntity = true
+DamageFactor = 0
+CameraZoom = 10
+CameraPosition = 0.0, 0.2, 0.0
+ArmorMinDamage = 20
+ArmorMaxDamage = 500
+HUD = vehicle
+ArmorMinDamage = 20
+ArmorMaxDamage = 5000
+ArmorDamageFactor = 0.95
+AddSeat = 0.0, 0.0, -1.0
+
+AddPartRotation = 0.0, 1.0, 0.0,  0,-1,0,  6.0, true
+
+AddWeapon = ops-20, 0.0, 0.09, 0.0,  0.0, 0.0
+
+AddRecipe = " YZ",  "ZXX",  "ZXZ",  X, iron_block, Y, glass, Z, iron_ingot

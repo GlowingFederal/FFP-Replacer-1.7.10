@@ -1,0 +1,17 @@
+DisplayName = S-8DM 80mmThermobaric
+Type = Rocket
+Power = 84
+ModelBullet = hydra70
+Acceleration = 4.5
+Explosion = 7
+ExplosionBlock = 2
+ArmoredBlockDamageDivisor = -1.0
+Flaming = false
+Sight = MoveSight
+Delay = 2
+FAE = true
+Sound = rocket_snd
+
+MaxAmmo = 20
+SuppliedNum = 1
+Item =  1, mcheli:ammo

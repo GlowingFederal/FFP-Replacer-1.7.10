@@ -1,0 +1,17 @@
+DisplayName = ASRAAM AAM
+Type = AAMissile
+Power = 60
+Acceleration = 3.5
+Explosion = 6
+ExplosionBlock = 2
+Flaming = false
+Sight = MissileSight
+Delay = 8
+LockTime = 10
+ProximityFuseDist = 1
+ModelBullet = aim120
+Sound = missile_1_snd
+
+MaxAmmo = 8
+SuppliedNum = 1
+Item =  2, mcheli:ammo

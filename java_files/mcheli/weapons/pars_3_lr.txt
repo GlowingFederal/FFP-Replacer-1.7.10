@@ -1,0 +1,19 @@
+DisplayName = TRIGAT-LR
+Type = ATMissile
+Power = 120
+Acceleration = 1.6
+Explosion = 7
+ExplosionBlock = 2
+Flaming = false
+Sight = MissileSight 
+Delay = 19
+LockTime = 25
+ModeNum = 1
+Sound = missile_1_snd
+RidableOnly = true
+
+DamageFactor = tank, 2.0
+
+MaxAmmo = 8
+SuppliedNum = 1
+Item =  1, mcheli:ammo

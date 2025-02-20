@@ -1,0 +1,15 @@
+DisplayName = GG1 7.62mm
+Type = MachineGun2
+ModelBullet = bullet
+Power = 5
+Acceleration = 4.0
+Flaming = false
+Sight = MoveSight
+Delay = 0
+SoundDelay = 3
+SoundPitch = 0.5
+Accuracy = 3.4
+HeatCount = 1
+MaxHeatCount = 200
+ModeNum = 2
+Sound = gun_l2_snd 

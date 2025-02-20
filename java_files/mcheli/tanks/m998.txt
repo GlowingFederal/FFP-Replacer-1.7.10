@@ -1,0 +1,93 @@
+﻿DisplayName = M998 HMMWV 
+MaxHp = 85
+ThrottleUpDown = 9.0
+Speed = 0.8
+MobilityYawOnGround = 3.0
+StepHeight = 1.2
+SubmergedDamageHeight = 3
+Sound = Humvee
+MinRotationPitch = -90
+MaxRotationPitch =  90
+MobilityRoll     = 0
+Gravity        = -0.17
+GravityInWater = -0.1
+DamageFactor   = 0.85
+EnableNightVision = false
+MaxFuel           = 1200
+FuelConsumption   = 1.0
+ThirdPersonDist = 5
+
+OnGroundPitchFactor = 18.0
+OnGroundRollFactor  = 4.8
+
+ArmorMinDamage = 16
+
+AddTexture = humvee_0_1
+AddTexture = humvee_1
+AddTexture = humvee_1_1
+AddTexture = humvee_2
+AddTexture = humvee_2_1
+AddTexture = humvee_3
+AddTexture = humvee_3_1
+
+EnableBack = true
+
+WeightType = Unknown
+
+SetWheelPos =  0.70,  -0.24,  2.0785, -1.6129
+
+HUD = humvee_hud, none, none, none, none, none
+
+AddSeat =  0.70,  0.18,  0.31
+AddSeat = -0.70,  0.30,  0.31
+AddSeat = -0.67,  0.30, -0.41
+AddSeat =  0.67,  0.30, -0.41
+AddSeat =  0.95,  0.95, -1.74
+AddSeat = -0.95,  0.95, -1.74
+
+PivotTurnThrottle = 0.1
+
+PartWheelRot = 40
+AddPartWheel     = -1.00,  0.1578,  2.0785, 30
+AddPartWheel     =  1.00,  0.1578,  2.0785, 30
+AddPartWheel     = -1.00,  0.1578, -1.6129
+AddPartWheel     =  1.00,  0.1578, -1.6129
+
+AddPartHatch = 0.00, 1.6423, -1.0244,  1, 0, 0,   60
+AddPartHatch = 0.00, 0.5813, -2.4568,  1, 0, 0,  -90
+
+AddPartSteeringWheel =   0.7536,  1.0514,  0.6943,   0, 1, -2.1445,   130
+
+AddPartThrottle =  0.5468, 0.9612, 0.8747,  0,1,-3.7320,  -220
+
+AddPartCanopy   =  1.19, 0.93, 1.0277,  0, 1, 0, -60
+AddPartCanopy   =  0,0,0,  0,1,0,  0
+
+InventorySize = 27
+
+RideRack = c5, 1
+RideRack = c5, 2
+
+RideRack = c5m, 7
+RideRack = c5m, 8
+RideRack = c5m, 9
+RideRack = c5m, 10
+RideRack = c5m, 11
+
+RideRack = a400m, 1
+RideRack = a400m, 2
+RideRack = a400m, 3
+RideRack = a400m, 5
+
+AddRack = container, 0.0, 1.05, -1.70,   0.0, 0.00, -3.15
+
+AddWeapon =  1_horn , 0.00,  0.42,  3.05, 0.0, 90
+
+EntityWidth  = 0.85
+EntityHeight = 0.85
+
+BoundingBox =  0.0, 0.62,  1.43,   2.3, 0.9
+BoundingBox =  0.0, 0.88, -1.30,   2.3, 0.7  
+BoundingBox =  0.0, 1.42, -0.10,   2.2, 0.5
+
+AddRecipe = " G ",  "IX ",  "RIR",   G, glass, I, iron_ingot, R, redstone, X, iron_block

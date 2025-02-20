@@ -1,0 +1,15 @@
+DisplayName = AGM-119B Penguin
+Type = ASMissile
+Power = 40
+Acceleration = 4.0
+Explosion = 9
+Flaming = true
+Sight = MoveSight
+Delay = 350
+Sound = missile_2_snd
+
+MaxAmmo = 4
+SuppliedNum = 1
+Item =  1, mcheli:ammo
+Item =  2, mcheli:ammo
+Item =  1, redstone
